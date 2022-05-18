@@ -1,5 +1,5 @@
 {% set name = "exceptiongroup" %}
-{% set version = "1.0.0rc2" %}
+{% set version = "1.0.0rc6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/exceptiongroup-{{ version }}.tar.gz
-  sha256: 4d254b05231bed1d43079bdcfe0f1d66c0ab4783e6777a329355f9b78de3ad83
+  sha256: a32d91b08dba53b3c419eb4e5e1d9aae2c9032e0e8004aec9bc7192881a0c422
 
 build:
   noarch: python
