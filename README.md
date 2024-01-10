@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/exceptiongroup-
 
 Home: https://pypi.org/project/exceptiongroup/
 
-Package license: MIT
+Package license: MIT and PSF-2.0
 
 Summary: Backport of PEP 654 (exception groups)
 
