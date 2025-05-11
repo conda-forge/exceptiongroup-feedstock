@@ -21,8 +21,9 @@ requirements:
     - flit-core
     - flit-scm
   run:
-    - typing_extensions >=4.6.0
     - python >={{ python_min }}
+    # for py <3.13 but let's stay noarch: python
+    - typing_extensions >=4.6.0
 
 test:
   imports:
