@@ -1,5 +1,5 @@
 {% set name = "exceptiongroup" %}
-{% set version = "1.2.2" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/exceptiongroup-{{ version }}.tar.gz
-  sha256: 47c2edf7c6738fafb49fd34290706d1a1a2f4d1c6df275526b62cbb4aa5393cc
+  sha256: b241f5885f560bc56a59ee63ca4c6a8bfa46ae4ad651af316d4e81817bb9fd88
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -22,6 +22,8 @@ requirements:
     - flit-scm
   run:
     - python >={{ python_min }}
+    # for py <3.13 but let's stay noarch: python
+    - typing_extensions >=4.6.0
 
 test:
   imports:
