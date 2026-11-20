@@ -26,7 +26,6 @@ requirements:
   run:
     - python >=${{ python_min }}
     # tightest of upstream's floors (python <3.13)
-    # for py <3.13 but let's stay noarch: python
     - typing_extensions >=4.6.0
 
 tests:
